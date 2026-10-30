@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Falcon Receipt Verifier: check a Falcon Shield verdict offline</title>
+<meta name="description" content="Verify a signed Falcon Shield pre-sign receipt in your browser. Nothing is uploaded.">
+<style>body{font:15px/1.5 system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;color:#111}textarea{width:100%;min-height:150px;font:12px monospace}
+button{padding:.5rem 1rem;font-size:15px;margin:.5rem .5rem 0 0}.ok{color:#0a7a2f}.bad{color:#b00020}pre{background:#f4f4f4;padding:.75rem;overflow:auto;font-size:12px}code{background:#f4f4f4;padding:0 .25rem}</style></head><body>
+<h1>Falcon Receipt Verifier</h1>
+<p>Every <a href="https://falcon-shield.falcon-sol.workers.dev/.well-known/x402">Falcon Shield</a> verdict comes with an ed25519-signed, hash-chained receipt. Paste one below to check it. The check runs entirely in this page and <b>nothing is uploaded</b>.</p>
+<p>Production signer: <code id="pin"></code></p>
+<label>Receipt or full API response (JSON)</label><textarea id="r" placeholder='{"verdict":"BLOCK","receipt":{"seq":..,"prev":..,"event":{..},"hash":..,"sig":..,"signer":..}}'></textarea>
+<label>Optional: the transaction you checked (base64), to prove the receipt is about these exact bytes</label><textarea id="tx" style="min-height:60px"></textarea>
+<label><input type="checkbox" id="anypin"> Accept any signer (testing only)</label><br>
+<button id="go">Verify receipt</button>
+<h3>Or verify a whole receipts.jsonl chain</h3><input type="file" id="f" accept=".jsonl,.txt,application/json">
+<div id="out"></div>
+<p style="color:#666;font-size:13px">Open source: <a href="https://github.com/ygfalcon/falcon-receipts">github.com/ygfalcon/falcon-receipts</a> (Python and JS, zero dependencies). A receipt proves what Shield said and when. NO_MATCH means no known-bad pattern matched; it is not a safety guarantee.</p>
+<script src="receipt-verify.js"></script><script>
+const R=window.ReceiptVerify, $=id=>document.getElementById(id); $("pin").textContent=R.FALCON_SHIELD_SIGNER;
+const esc=s=>String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"})[c]);
+function show(ok,title,obj){$("out").innerHTML='<h2 class="'+(ok?"ok":"bad")+'">'+esc(title)+'</h2><pre>'+esc(JSON.stringify(obj,(k,v)=>typeof v==="bigint"?Number(v):v,1))+'</pre>'}
+$("go").onclick=()=>{const o=$("anypin").checked?{pinnedSigners:[]}:{};const tx=$("tx").value.trim();if(tx)o.txBase64=tx;
+ const r=R.verifyReceipt($("r").value,o);show(r.ok,r.ok?"VALID: signed by "+(r.signer||"")+", verdict "+r.verdict:"NOT VALID: "+r.problems.join(", "),r)};
+$("f").onchange=async e=>{const t=R.decodeUtf8(new Uint8Array(await e.target.files[0].arrayBuffer()));const c=R.verifyChain(t,{pinnedSigners:$("anypin").checked?[]:[R.FALCON_SHIELD_SIGNER]});
+ show(c.ok,c.ok?(c.authenticated?"CHAIN VERIFIED":"CHAIN CONSISTENT (unpinned)")+": "+c.count+" entries":"CHAIN FAILED",{ok:c.ok,authenticated:c.authenticated,count:c.count,head:c.head,signers:c.signers,errors:c.errors.slice(0,20),warnings:c.warnings})};
+</script></body></html>

@@ -1,0 +1,14 @@
+{
+  "name": "falcon-receipts",
+  "version": "1.0.0",
+  "description": "Offline, zero-dependency verifier for Falcon Shield signed pre-sign receipts (Solana, x402).",
+  "main": "js/receipt-verify.js",
+  "bin": { "falcon-receipts": "js/bin.js" },
+  "files": ["js/", "docs/", "README.md", "LICENSE"],
+  "scripts": { "test": "node tests/run_cases.js && node tests/test_single.js" },
+  "keywords": ["solana", "x402", "receipt", "ed25519", "verifier", "ai-agents", "wallet-security", "falcon-shield"],
+  "repository": { "type": "git", "url": "git+https://github.com/ygfalcon/falcon-receipts.git" },
+  "homepage": "https://falcon-receipts.falcon-sol.workers.dev",
+  "author": "falcon.sol",
+  "license": "MIT"
+}

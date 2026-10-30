@@ -1,0 +1,938 @@
+{
+ "real_ok": {
+  "ok": true,
+  "codes": [],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": true
+ },
+ "real_unpinned": {
+  "ok": true,
+  "codes": [],
+  "pins": [],
+  "checkpoints": [],
+  "authenticated": false
+ },
+ "edit_event": {
+  "ok": false,
+  "codes": [
+   [
+    1,
+    "BAD_HASH"
+   ],
+   [
+    1,
+    "BAD_SIG"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "edit_rehash": {
+  "ok": false,
+  "codes": [
+   [
+    1,
+    "BAD_SIG"
+   ],
+   [
+    2,
+    "BAD_PREV"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "forged_resign_unpinned": {
+  "ok": true,
+  "codes": [],
+  "pins": [],
+  "checkpoints": [],
+  "authenticated": false
+ },
+ "forged_resign_pinned": {
+  "ok": false,
+  "codes": [
+   [
+    1,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    10,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    11,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    12,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    13,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    14,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    15,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    16,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    17,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    18,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    19,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    2,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    20,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    21,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    22,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    23,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    24,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    25,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    26,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    27,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    28,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    29,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    3,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    30,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    31,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    32,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    33,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    34,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    35,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    36,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    37,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    38,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    39,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    4,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    40,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    41,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    42,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    43,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    5,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    6,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    7,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    8,
+    "SIGNER_NOT_PINNED"
+   ],
+   [
+    9,
+    "SIGNER_NOT_PINNED"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "delete_middle": {
+  "ok": false,
+  "codes": [
+   [
+    10,
+    "BAD_PREV"
+   ],
+   [
+    10,
+    "BAD_SEQ"
+   ],
+   [
+    11,
+    "BAD_SEQ"
+   ],
+   [
+    12,
+    "BAD_SEQ"
+   ],
+   [
+    13,
+    "BAD_SEQ"
+   ],
+   [
+    14,
+    "BAD_SEQ"
+   ],
+   [
+    15,
+    "BAD_SEQ"
+   ],
+   [
+    16,
+    "BAD_SEQ"
+   ],
+   [
+    17,
+    "BAD_SEQ"
+   ],
+   [
+    18,
+    "BAD_SEQ"
+   ],
+   [
+    19,
+    "BAD_SEQ"
+   ],
+   [
+    20,
+    "BAD_SEQ"
+   ],
+   [
+    21,
+    "BAD_SEQ"
+   ],
+   [
+    22,
+    "BAD_SEQ"
+   ],
+   [
+    23,
+    "BAD_SEQ"
+   ],
+   [
+    24,
+    "BAD_SEQ"
+   ],
+   [
+    25,
+    "BAD_SEQ"
+   ],
+   [
+    26,
+    "BAD_SEQ"
+   ],
+   [
+    27,
+    "BAD_SEQ"
+   ],
+   [
+    28,
+    "BAD_SEQ"
+   ],
+   [
+    29,
+    "BAD_SEQ"
+   ],
+   [
+    30,
+    "BAD_SEQ"
+   ],
+   [
+    31,
+    "BAD_SEQ"
+   ],
+   [
+    32,
+    "BAD_SEQ"
+   ],
+   [
+    33,
+    "BAD_SEQ"
+   ],
+   [
+    34,
+    "BAD_SEQ"
+   ],
+   [
+    35,
+    "BAD_SEQ"
+   ],
+   [
+    36,
+    "BAD_SEQ"
+   ],
+   [
+    37,
+    "BAD_SEQ"
+   ],
+   [
+    38,
+    "BAD_SEQ"
+   ],
+   [
+    39,
+    "BAD_SEQ"
+   ],
+   [
+    40,
+    "BAD_SEQ"
+   ],
+   [
+    41,
+    "BAD_SEQ"
+   ],
+   [
+    42,
+    "BAD_SEQ"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "swap_adjacent": {
+  "ok": false,
+  "codes": [
+   [
+    7,
+    "BAD_PREV"
+   ],
+   [
+    7,
+    "BAD_SEQ"
+   ],
+   [
+    8,
+    "BAD_PREV"
+   ],
+   [
+    8,
+    "BAD_SEQ"
+   ],
+   [
+    9,
+    "BAD_PREV"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "truncate_no_checkpoint": {
+  "ok": true,
+  "codes": [],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": true
+ },
+ "truncate_with_checkpoint": {
+  "ok": false,
+  "codes": [
+   [
+    null,
+    "CHECKPOINT_MISMATCH"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [
+   [
+    43,
+    "f80f26f8c5de5a3a1ecdfe54476bc9110f754de8f0b5e402445b79f00f788aad"
+   ]
+  ],
+  "authenticated": null
+ },
+ "checkpoint_ok": {
+  "ok": true,
+  "codes": [],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [
+   [
+    43,
+    "f80f26f8c5de5a3a1ecdfe54476bc9110f754de8f0b5e402445b79f00f788aad"
+   ],
+   [
+    0,
+    "847e64769825dfb994b94cbd68649d695d6662159574cc06e45835feebad2a88"
+   ]
+  ],
+  "authenticated": true
+ },
+ "fork_checkpoint": {
+  "ok": false,
+  "codes": [
+   [
+    null,
+    "CHECKPOINT_MISMATCH"
+   ]
+  ],
+  "pins": [],
+  "checkpoints": [
+   [
+    43,
+    "f80f26f8c5de5a3a1ecdfe54476bc9110f754de8f0b5e402445b79f00f788aad"
+   ]
+  ],
+  "authenticated": null
+ },
+ "sig_bitflip": {
+  "ok": false,
+  "codes": [
+   [
+    3,
+    "BAD_SIG"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "signer_swapped": {
+  "ok": false,
+  "codes": [
+   [
+    3,
+    "BAD_SIG"
+   ],
+   [
+    3,
+    "SIGNER_NOT_PINNED"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "sig_malleated_S_plus_L": {
+  "ok": false,
+  "codes": [
+   [
+    3,
+    "BAD_SIG"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "sig_garbage": {
+  "ok": false,
+  "codes": [
+   [
+    3,
+    "BAD_SIG"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "hash_uppercase": {
+  "ok": false,
+  "codes": [
+   [
+    3,
+    "BAD_HASH"
+   ],
+   [
+    4,
+    "BAD_PREV"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "unsigned_extra_field": {
+  "ok": false,
+  "codes": [
+   [
+    2,
+    "UNSIGNED_FIELD"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "missing_field": {
+  "ok": false,
+  "codes": [
+   [
+    2,
+    "MISSING_FIELD"
+   ],
+   [
+    3,
+    "BAD_PREV"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "seq_float": {
+  "ok": false,
+  "codes": [
+   [
+    2,
+    "BAD_TYPE"
+   ],
+   [
+    3,
+    "BAD_PREV"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "seq_bool": {
+  "ok": false,
+  "codes": [
+   [
+    2,
+    "BAD_TYPE"
+   ],
+   [
+    3,
+    "BAD_PREV"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "duplicate_key": {
+  "ok": false,
+  "codes": [
+   [
+    5,
+    "BAD_JSON"
+   ],
+   [
+    6,
+    "BAD_PREV"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "nan_literal": {
+  "ok": false,
+  "codes": [
+   [
+    5,
+    "BAD_JSON"
+   ],
+   [
+    6,
+    "BAD_PREV"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "truncated_json_line": {
+  "ok": false,
+  "codes": [
+   [
+    5,
+    "BAD_JSON"
+   ],
+   [
+    6,
+    "BAD_PREV"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "blank_interior_line": {
+  "ok": false,
+  "codes": [
+   [
+    10,
+    "BAD_SEQ"
+   ],
+   [
+    11,
+    "BAD_SEQ"
+   ],
+   [
+    12,
+    "BAD_SEQ"
+   ],
+   [
+    13,
+    "BAD_SEQ"
+   ],
+   [
+    14,
+    "BAD_SEQ"
+   ],
+   [
+    15,
+    "BAD_SEQ"
+   ],
+   [
+    16,
+    "BAD_SEQ"
+   ],
+   [
+    17,
+    "BAD_SEQ"
+   ],
+   [
+    18,
+    "BAD_SEQ"
+   ],
+   [
+    19,
+    "BAD_SEQ"
+   ],
+   [
+    20,
+    "BAD_SEQ"
+   ],
+   [
+    21,
+    "BAD_SEQ"
+   ],
+   [
+    22,
+    "BAD_SEQ"
+   ],
+   [
+    23,
+    "BAD_SEQ"
+   ],
+   [
+    24,
+    "BAD_SEQ"
+   ],
+   [
+    25,
+    "BAD_SEQ"
+   ],
+   [
+    26,
+    "BAD_SEQ"
+   ],
+   [
+    27,
+    "BAD_SEQ"
+   ],
+   [
+    28,
+    "BAD_SEQ"
+   ],
+   [
+    29,
+    "BAD_SEQ"
+   ],
+   [
+    30,
+    "BAD_SEQ"
+   ],
+   [
+    31,
+    "BAD_SEQ"
+   ],
+   [
+    32,
+    "BAD_SEQ"
+   ],
+   [
+    33,
+    "BAD_SEQ"
+   ],
+   [
+    34,
+    "BAD_SEQ"
+   ],
+   [
+    35,
+    "BAD_SEQ"
+   ],
+   [
+    36,
+    "BAD_SEQ"
+   ],
+   [
+    37,
+    "BAD_SEQ"
+   ],
+   [
+    38,
+    "BAD_SEQ"
+   ],
+   [
+    39,
+    "BAD_SEQ"
+   ],
+   [
+    40,
+    "BAD_SEQ"
+   ],
+   [
+    41,
+    "BAD_SEQ"
+   ],
+   [
+    42,
+    "BAD_SEQ"
+   ],
+   [
+    43,
+    "BAD_SEQ"
+   ],
+   [
+    44,
+    "BAD_SEQ"
+   ],
+   [
+    5,
+    "BAD_JSON"
+   ],
+   [
+    6,
+    "BAD_SEQ"
+   ],
+   [
+    7,
+    "BAD_SEQ"
+   ],
+   [
+    8,
+    "BAD_SEQ"
+   ],
+   [
+    9,
+    "BAD_SEQ"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "crlf_line_endings": {
+  "ok": true,
+  "codes": [],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": true
+ },
+ "utf8_bom": {
+  "ok": false,
+  "codes": [
+   [
+    0,
+    "BAD_JSON"
+   ],
+   [
+    1,
+    "BAD_PREV"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "invalid_utf8": {
+  "ok": false,
+  "codes": [
+   [
+    null,
+    "BAD_ENCODING"
+   ]
+  ],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "empty_file": {
+  "ok": false,
+  "codes": [],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ },
+ "no_trailing_newline": {
+  "ok": true,
+  "codes": [],
+  "pins": [
+   "GgHie9LuzXPAU64iLsfA6jxbZoXv9RaSZk6rsMz44XpY"
+  ],
+  "checkpoints": [],
+  "authenticated": true
+ },
+ "canon_torture_ok": {
+  "ok": true,
+  "codes": [],
+  "pins": [
+   "CrGL6hk3A6pPY5VbDQfjipuMQSvmh17k1wZeD79AhAEq"
+  ],
+  "checkpoints": [],
+  "authenticated": true
+ },
+ "canon_float_vs_int": {
+  "ok": false,
+  "codes": [
+   [
+    3,
+    "BAD_HASH"
+   ],
+   [
+    3,
+    "BAD_SIG"
+   ]
+  ],
+  "pins": [
+   "CrGL6hk3A6pPY5VbDQfjipuMQSvmh17k1wZeD79AhAEq"
+  ],
+  "checkpoints": [],
+  "authenticated": null
+ }
+}
