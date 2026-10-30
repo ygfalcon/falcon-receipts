@@ -289,6 +289,8 @@ def verify_receipt(r, pinned_signers=(FALCON_SHIELD_SIGNER,), tx_b64=None):
     Recomputes hash = sha256(canon({seq,logged_at,prev,event})), checks the ed25519 sig over it,
     and (optionally) that the receipt is about the exact transaction bytes you hold."""
     out = {"ok": False, "problems": [], "verdict": None, "tx_sha256": None}
+    if isinstance(r, dict) and isinstance(r.get("receipt"), dict):
+        r = r["receipt"]  # accept the full /guard/check response body too (same as the JS verifier)
     try:
         if not all(k in r for k in ("seq", "logged_at", "prev", "event", "hash", "sig", "signer")):
             out["problems"].append("MISSING_FIELDS")
