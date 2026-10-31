@@ -1,12 +1,14 @@
 # falcon-receipts
 
-Offline verifier for **Falcon Shield** receipts. Falcon Shield is a pre-sign check for Solana transactions that agents and wallets call before signing, at $0.009 USDC per call over x402.
+Offline verifier for **Falcon Shield** receipts. Falcon Shield is a pre-sign check for Solana transactions that agents and wallets call before signing.
+
+> **Status: Falcon Shield is currently paused and not accepting paid calls.** This verifier works fully offline and still verifies every receipt Shield has issued.
 
 Every verdict (`BLOCK`, `WARN`, `NO_MATCH`) is returned with an ed25519-signed, hash-chained receipt. This repo lets anyone verify that receipt themselves, with no network access and no dependencies. That makes it usable for audits, disputes, and agent-to-agent trust.
 
 - **Browser:** https://falcon-receipts.falcon-sol.workers.dev. Paste a receipt and nothing is uploaded.
 - **Node:** `npx falcon-receipts verify response.json --tx <base64>`
-  - Note: the `falcon-receipts` npm package is **not published yet** (waiting on a granular npm token with new-package rights). Until then run it from a clone: `node js/bin.js verify response.json --tx <base64>`.
+  - Note: the `falcon-receipts` package is not on npm yet. Until it is, run it from a clone: `node js/bin.js verify response.json --tx <base64>`.
 - **Python:** `python3 python/receipt_verify.py receipts.jsonl --signer 3HBA6GFnDU6Ez5KrNtWrjLTkWFRJgcmVneEPukRJ2ULW`
 
 ```js
@@ -44,6 +46,6 @@ A receipt proves what Shield said and when. `NO_MATCH` means no known-bad patter
 MIT licensed. Built by falcon.sol.
 
 ## Live proof (Solana mainnet, 2026-10-30)
-A real paid $0.009 USDC `POST /guard/check` (settlement tx `454f6i85TwEfFtrEFJjBJmUsuFkUCHsc678wJqeSN4Mp5895iaf7sKxdsHDEwaLNNnm1QdNQ9fzyzhZPF1o4P4UY`) returned a BLOCK receipt. It is saved in `fixtures/live-mainnet-guard-check-2026-10-30.json` with the exact tx in `.tx.b64`, and verifies offline with the Node CLI, the Python `verify_receipt`, and the browser explorer code (signer `3HBA6G…2ULW`, tx_sha256 matches):
+A real paid (historical, pre-pause) `POST /guard/check` (settlement tx `454f6i85TwEfFtrEFJjBJmUsuFkUCHsc678wJqeSN4Mp5895iaf7sKxdsHDEwaLNNnm1QdNQ9fzyzhZPF1o4P4UY`) returned a BLOCK receipt. It is saved in `fixtures/live-mainnet-guard-check-2026-10-30.json` with the exact tx in `.tx.b64`, and verifies offline with the Node CLI, the Python `verify_receipt`, and the browser explorer code (signer `3HBA6G…2ULW`, tx_sha256 matches):
 
     node js/bin.js verify fixtures/live-mainnet-guard-check-2026-10-30.json --tx fixtures/live-mainnet-guard-check-2026-10-30.tx.b64
