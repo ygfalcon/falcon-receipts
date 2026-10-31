@@ -6,7 +6,7 @@ Every verdict (`BLOCK`, `WARN`, `NO_MATCH`) is returned with an ed25519-signed, 
 
 - **Browser:** https://falcon-receipts.falcon-sol.workers.dev. Paste a receipt and nothing is uploaded.
 - **Node:** `npx falcon-receipts verify response.json --tx <base64>`
-  - Note: the `falcon-receipts` npm package is **not published yet** (waiting on a granular npm token with new-package rights). Until then run it from a clone: `node js/bin.js verify response.json --tx <base64>`.
+  - Note: the `falcon-receipts` package is not on npm yet. Until it is, run it from a clone: `node js/bin.js verify response.json --tx <base64>`.
 - **Python:** `python3 python/receipt_verify.py receipts.jsonl --signer 3HBA6GFnDU6Ez5KrNtWrjLTkWFRJgcmVneEPukRJ2ULW`
 
 ```js
